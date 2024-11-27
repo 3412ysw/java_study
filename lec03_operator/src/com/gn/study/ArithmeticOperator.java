@@ -35,6 +35,17 @@ public class ArithmeticOperator {
 		System.out.println(d);	
 			
 		
+		// 3. 증감 연산자 
+		int pre = 5;
+		System.out.println(pre);
+		System.out.println(++pre);
+		
+		int post = 5;
+		System.out.println(post);
+		System.out.println(post++);
+		System.out.println(post);
+		
+		
 		
 	}
 
