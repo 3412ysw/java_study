@@ -1,6 +1,6 @@
 package com.gn.practice;
 
-public class Project02 {
+public class Practicet02 {
 	public static void main(String [] args) {
 		/*변수명이 isStudent인 논리형 변수
 		오늘 받은 학점(알파벳) char 변수 grade
