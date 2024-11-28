@@ -29,6 +29,6 @@ public class Homework02 {
         }else {
         	System.out.println("해당하는 계절이 없습니다.");
         }
-		
+	
 	}
 }

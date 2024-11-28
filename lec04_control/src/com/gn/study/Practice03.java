@@ -23,6 +23,5 @@ public class Practice03 {
 				System.out.println("불합격입니다.");
 			}
 		}
-		
 	}
 }

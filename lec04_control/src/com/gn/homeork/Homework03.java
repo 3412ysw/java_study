@@ -16,7 +16,7 @@ public class Homework03 {
 		int big = num1 > num2 ? (num1 > num3 ? num3 : num1) : (num2 > num3 ? num3 : num2);
 		System.out.println("세 수 중에서 가장 작은 수는 " + big + "입니다.");
 		
-		
+	
 	}
 
 }

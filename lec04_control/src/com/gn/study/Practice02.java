@@ -19,7 +19,6 @@ public class Practice02 {
 		}else {
 			System.out.println("당신의 학점은 F입니다.");
 		}
-
 	}
 }
 
