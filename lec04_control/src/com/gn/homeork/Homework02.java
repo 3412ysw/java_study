@@ -12,9 +12,9 @@ public class Homework02 {
 		System.out.print("기온 : ");
 		int tem = sc.nextInt();
 		if (month==1||month==2||month==12) {
-			if(tem >= -12) {
+			if(tem <= -15) {
 				System.out.println("한파 경보");
-			}else if(tem >= -15) {
+			}else if(tem <= -12) {
 				System.out.println("한파 주의보");
 			}
 		} else if (month==3||month==4||month==5) {
