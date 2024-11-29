@@ -16,9 +16,9 @@ public class Run {
 		Scanner sc = new Scanner(System.in);
 		int menu = sc.nextInt();
 		
-		Practice practice = new practice();
+		Practice practice = new Practice();
 		swhich(menu) {
-			case 1 : practice.practice02();
+			case 2 : practice.practice02();
 			    break;
 			    
 		}
