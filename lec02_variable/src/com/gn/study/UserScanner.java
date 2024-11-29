@@ -1,6 +1,7 @@
 package com.gn.study;
 //1. 외부에서 가져오기 
-import java.util.Scanner;
+import java.util.Scanner; //ctrl +shift + o
+
 
 public class UserScanner {
 
