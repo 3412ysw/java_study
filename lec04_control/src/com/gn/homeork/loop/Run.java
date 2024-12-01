@@ -17,10 +17,13 @@ public class Run {
 		int menu = sc.nextInt();
 		
 		Practice practice = new Practice();
-		swhich(menu) {
-			case 2 : practice.practice02();
+		switch(menu) {
+			case 2 : practice.Practice02();
 			    break;
-			    
+			case 3 : practice.Practice03();
+			    break;
+			case 6 : practice.practice06();
+				break;
 		}
 		sc.close();
 		
