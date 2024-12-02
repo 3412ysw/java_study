@@ -6,11 +6,11 @@ public class Practice {
 	
 	public void Practice02(){
 		
+		while(true) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("숫자 : ");
 		int su1 = sc.nextInt();
-				
-			if(su1 < 0 ) {
+		if(su1 < 0 ) {
 			System.out.println("양수만 입력해주세요.");
 			}else if(su1 > 9) {
 				System.out.println("9이하의 숫자를 입력해주세요.");
@@ -24,16 +24,20 @@ public class Practice {
 			    	}
 			    }
 			}
-			}
+		
+	    }
+	}
 
 
 	public void Practice03(){
+		while(true) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("입력 : ");
 		String text = sc.nextLine();
-		for(;;) {
+		for(int i=0;;) {
 			if(text.equals(text)) {
 			break;
+		}
 		}
 		}
 	}
