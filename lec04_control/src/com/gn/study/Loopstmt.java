@@ -1,4 +1,4 @@
-package com.gn.study;
+				package com.gn.study;
 
 public class Loopstmt {
 
@@ -97,7 +97,7 @@ public class Loopstmt {
 			do {
 				System.out.println("do while문 출력");
 				count2--;
-			}while(count2 >0 && count2 < 10);
+			}while(0 < count2 && count2 < 10);
 			
 			
 			//9. continue
