@@ -19,10 +19,10 @@ public class Run {
 		switch(menu) {
 			case 1 : practice.practice01();;
 			    break;
-//			case 2 : practice.Practice02();
-//			    break;
-//			case 3 : practice.Practice03();
-//			    break;
+			case 2 : practice.practice02();
+				break;
+			case 3 : practice.practice03();
+			    break;
 //			case 5 : practice.practice05();
 //				break;
 		}

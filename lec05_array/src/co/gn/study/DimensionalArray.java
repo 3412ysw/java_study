@@ -38,6 +38,7 @@ public class DimensionalArray {
 		int[] age2 = new int[3];
 		for(int i = 0 ; i<age2.length ; i++) {
 			age2[i] = 1+10;
+			System.out.print("이거"+age2[i]);
 		}
 		
 		//(3) 선언과 동시에 초기화

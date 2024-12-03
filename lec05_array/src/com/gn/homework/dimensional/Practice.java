@@ -30,17 +30,25 @@ public class Practice {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수 : ");
 		int num = sc.nextInt();
-		for(int i = 0; i <= num; i++) {
-			System.out.println("배열"+i+"번째 인덱스에 넣을 값 : ");
+		int total = 0 ;
+		int[] arr = new int [num];
+		for(int i = 0; i <= arr.length-1; i++) {
+			System.out.print("배열" + i + "번째 인덱스에 넣을 값:");
+			int nums = sc.nextInt();
+			arr[i] = nums;
+			}
+		for(int numsu:arr) {
+			System.out.print(numsu);
+			total += numsu;
 		}
-		
-		
-		
+		System.out.print("\n");
+		System.out.print("총합 : "+ total);
 		
 	}
 	
-	
-	
+	public void practice03() {
+		
+	}
 	
 	
 	
