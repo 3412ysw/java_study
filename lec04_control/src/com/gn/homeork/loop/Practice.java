@@ -88,7 +88,11 @@ public class Practice {
 		do {
 		System.out.println("게임을 다시 플레이하시겠습니까?(yes/no)");
 		String text = sc.nextLine();
+		}while{
+			
 		}
+		
+	
 	}
 	
 	

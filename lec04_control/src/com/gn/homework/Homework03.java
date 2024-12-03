@@ -1,4 +1,4 @@
-package com.gn.homeork;
+package com.gn.homework;
 
 import java.util.Scanner;
 
