@@ -84,26 +84,48 @@ public class Practice {
 	
 	public void practice04(){
 		Scanner sc = new Scanner(System.in);
-		System.out.println("게임을 실행합니다!");
+		String text;
 		do {
-		System.out.println("게임을 다시 플레이하시겠습니까?(yes/no)");
-		String text = sc.nextLine();
-		}while{
-			
+			System.out.println("게임을 실행합니다!");
+			System.out.println("게임을 다시 플레이하시겠습니까?(yes/no)");
+			text = sc.nextLine();
+		}while(text.equals("yes")) ;{
+			System.out.println("게임을 종료합니다.");
 		}
 		
 	
 	}
 	
 	
-	public void practice06() {
-		for(int i= 4; i > 0 ; i--) {
-			System.out.print(" ");
-			for(int j = 1; j < 10; j++) {
-				System.out.print("*");
+	public void practice05() {
+		Scanner sc = new Scanner(System.in);
+		int nums;
+		int total = 0;
+		while(true){
+			System.out.print("숫자(0을 입력하면 종료) : ");
+			nums = sc.nextInt();
+			if(nums < 0) {
+				continue;
+			}else if (nums >0) {
+				total += nums;
+			}else if (nums==0) {
+				System.out.println("양수의 합계 : " + total);
+				break;
 			}
 		}
-		
+	}
+	
+	
+	
+	public void practice06() {
+		for(int i= 4; i == 0 ;i--) {
+			System.out.print("*");}
+//			for(int j = 1; j < 10; j++) {
+//				System.out.print("*");
+//				
+//			}
+//			System.out.println();
+//		}
 	}
 	
 	public void practice07() {
@@ -126,11 +148,61 @@ public class Practice {
 				num = sc.nextInt();
 			}
 		}
-		
-		
-		
 	}
 	
-	
-	
+
+    public void practice08() {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.print("문자열 : ");
+    	String line = sc.nextLine(); // application
+    	System.out.print("문자 : ");
+    	char ch = sc.nextLine().charAt(0); // a
+    	int count = 0;
+    	for(int i =0 ; i < line.length(); i++) {
+    		if(line.charAt(i)== ch) {
+    			count++;
+    		}
+    	}
+    	System.out.println("포함된 개수 : "+ count);
+    	System.out.print("다시 입력하시겠습니까? : ");
+    	String answer = sc.nextLine();
+    	while(true) {
+    		if(answer.equals("Y")||answer.equals("y")) {
+    			System.out.print("문자열 : ");
+    			line = sc.nextLine();
+    			System.out.print("문자 : ");
+    			ch = sc.nextLine().charAt(0);
+    			// "a".charAt(0)
+    			count = 0;
+    			for(int i =0 ; i < line.length(); i++) {
+    	    		if(line.charAt(i)== ch) {
+    	    			count++;
+    	    		}
+    	    	}
+    			System.out.println("포함된 개수 : "+ count);
+    			System.out.print("다시 입력하시겠습니까? : ");
+    	    	answer = sc.nextLine();
+    		} else if(answer.equals("N")||answer.equals("n")) {
+    			sc.close();
+    			break;
+    		} else {
+    			System.out.println("잘못된 대답입니다. 다시 입력해주세요");
+    			System.out.print("다시 입력하시겠습니까? : ");
+    	    	answer = sc.nextLine();
+    		}
+    	}
+ 
+    	
+    	
+    
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    }
 }
+
+
