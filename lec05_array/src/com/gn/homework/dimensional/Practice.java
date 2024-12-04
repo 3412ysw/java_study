@@ -76,8 +76,6 @@ public class Practice {
 		    	break;
 			}
 		}
-		
-		
 	}	
 		
 		
@@ -85,10 +83,15 @@ public class Practice {
 	
 	public void practice04() {
 		
-		for(int i = 0 ; i < 6 ; i++) {
-		int rnd1 = (int)(Math.random()*45)+1;
-		   
-			}
+		
+//		for(int i = 0 ; ; i++) {
+//		int rnd1 = (int)(Math.random()*45)+1;
+//		   if(rnd1==rnd2) {
+//			   continue;
+//		    }
+//		   int[] arr = {rnd1,rnd2,rnd2,rnd2,rnd2,rnd2};
+//		   //System.out.print();
+//		}
 		
 		}
 		
@@ -113,7 +116,7 @@ public class Practice {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("배열의 크기를 입력하세요 : ");
 		int number = sc.nextInt();
-		for( int i=1 ; i <=)
+		//for( int i=1 ; i <=)
 		//int[] arrnum = new int[number];
 		
 		
