@@ -1,6 +1,7 @@
 package com.gn.study.constructor.controller;
 
 import com.gn.study.constructor.model.vo.Book;
+import com.gn.study.constructor.model.vo.Cake;
 import com.gn.study.constructor.model.vo.Car;
 import com.gn.study.constructor.model.vo.Student;
 
@@ -24,6 +25,25 @@ public class Run {
 			s.printInfo(student[i]);
 			s.printInfo(i,student[i]);
 		}
+		
+		
+		System.out.println("====케이크=====");
+		Cake c = new Cake();
+		//인스턴스 변수
+		//4. 변수 기본값
+		//3. 명시적 초기화
+		//2. 초기화 블록
+		//1. 생성자를 이용한 초기화
+		System.out.println(c.flavor);
+		
+		// 클래스 변수 (static)
+		// 4.변수 기본값
+		// 3.명시적 초기화
+		// 2.초기화 블록 
+		// 생성자 없다고 생각하셈
+		
+		System.out.println(c.price);
+		
 		
 		
 		
