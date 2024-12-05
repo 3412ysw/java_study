@@ -27,6 +27,7 @@ public class Book {
 		this.discountRate = discountRate;
 		}
 	
+	//메소드-> 출력 기능
 	public void information() {
 		System.out.println("=== " + title + " ===");
 		System.out.println("저자 : " + author);
