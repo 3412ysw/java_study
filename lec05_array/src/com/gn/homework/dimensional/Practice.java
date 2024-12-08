@@ -114,15 +114,40 @@ public class Practice {
 	
 	public void practice06() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("배열의 크기를 입력하세요 : ");
-		int number = sc.nextInt();
-		//for( int i=1 ; i <=)
-		//int[] arrnum = new int[number];
-		
-		
-		
-		
-	
+		System.out.print("배열의 크기를 입력하세요 : ");
+		int number1 = sc.nextInt();
+		sc.nextLine();
+		String[]arr = new String[number1];
+		for(int i=0;i<number1;i++) {
+			System.out.print((i+1)+"번째 문자열 : ");
+			String text = sc.nextLine();
+			arr[i] = text;
+		}
+		while(true) {
+			System.out.print("더 값을 입력하시겠습니까?(Y/N) : ");
+			String word = sc.nextLine();
+			if(word.equals("Y")||word.equals("y")) {
+				System.out.print("더 입력하고 싶은 개수 : ");
+				int number2 = sc.nextInt();
+				sc.nextLine();
+				String[]arr2 = new String[number1+number2];
+				for(int i=0;i<number1;i++) {
+					arr2[i]=arr[1];
+				}for(int i = 0; i<number2; i++) {
+					System.out.print((number1+i+1)+"번째 문자열 : ");
+					arr2[number1+i]= sc.nextLine();
+				}
+				
+				
+				
+			}else if(word.equals("N")||word.equals("n")) {
+				break;
+			}else {
+				System.out.println("입력할 수 없는 값입니다.");
+			}
+			//System.out.println(arr2[number1+i]);
+			
+		}
 	
 	}
 	
