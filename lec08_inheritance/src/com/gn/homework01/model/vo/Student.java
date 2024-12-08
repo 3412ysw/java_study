@@ -17,5 +17,4 @@ public class Student extends Person{
 	return super.toString()+"\n학년 : "+ grade+"\n전공 : "+ major;
 	}
 	
-	
 }
