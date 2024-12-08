@@ -12,11 +12,10 @@ public class Student extends Person{
 		this.major = major;
 		
 	}
-	
 	@Override
 	public String toString() {
-	return "===" + name + " ===\n"
-			+ "나이 : " + age + "\n"
-			+ "키 : " + height;
+	return super.toString()+"\n학년 : "+ grade+"\n전공 : "+ major;
 	}
+	
+	
 }

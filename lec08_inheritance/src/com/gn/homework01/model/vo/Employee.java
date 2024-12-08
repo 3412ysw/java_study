@@ -1,5 +1,7 @@
 package com.gn.homework01.model.vo;
 
+
+
 public class Employee extends Person{
 	private int salary; //급여
 	private String dept; //부서
@@ -13,6 +15,16 @@ public class Employee extends Person{
 	}
 	
 	
+	
+	@Override
+	public String toString() {
+		return super.toString()
+			   +"\n급여 : " + salary
+			   +"\n부서 : " + dept;
+		 
+		
+	
+	}
 	
 	
 

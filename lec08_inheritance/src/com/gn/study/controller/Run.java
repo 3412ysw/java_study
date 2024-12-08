@@ -11,7 +11,7 @@ public class Run {
 		Dog d = new Dog();
 		d.eat();
 		
-//		//Parent p = new Parent();
+//		Parent p = new Parent();
 //		System.out.println(p.getA());
 //		Child c = new Child();
 //		System.out.println(c.getA());
