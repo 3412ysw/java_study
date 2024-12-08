@@ -140,6 +140,7 @@ public class Practice {
 				
 				
 				
+				
 			}else if(word.equals("N")||word.equals("n")) {
 				break;
 			}else {
