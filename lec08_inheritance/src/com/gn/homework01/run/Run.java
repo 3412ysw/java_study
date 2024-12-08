@@ -23,6 +23,8 @@ public class Run {
 		arr2[1] = new Student("이영희",23,167,54,4,"물리학과");
 		arr2[2] = new Student("홍길동",21,197.6,86,2,"경영학과");
 		
+		
+		sysout
 		for(Student su: arr2) {
 			
 		}
