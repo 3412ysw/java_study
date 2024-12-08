@@ -138,7 +138,7 @@ public class Practice {
 					arr2[number1+i]= sc.nextLine();
 				}
 				
-				
+			
 				
 				
 			}else if(word.equals("N")||word.equals("n")) {
