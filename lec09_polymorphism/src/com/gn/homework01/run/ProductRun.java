@@ -14,7 +14,7 @@ public class ProductRun {
 		Book b = new Book("자바의 정석",15000);
 	
 		System.out.println(f.getName()+"의 최종 가격 : " + (f.getPrice()- f.calculatePrice()));
-		System.out.println(b.getName()+"의 최종 가격 : " + b.calculatePrice());
+		System.out.println(b.getName()+"의 최종 가격 : " + b.getPrice());
 	}
 
 }
