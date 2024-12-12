@@ -78,7 +78,7 @@ public class BookMenu {
 		System.out.println("=== 전체 조회 ===");
 		BookController b = new BookController();
 		 // booklist -> List<book>
-		List<Book> arr = b.selectList();
+		List<Book> arr = bc.selectList();
 		if(arr.isEmpty()) {
 			System.out.println("존재하는 도서가 없습니다.");
 		}else {

@@ -1,8 +1,10 @@
 package com.gn.study.controller;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import com.gn.study.model.vo.Container;
 import com.gn.study.model.vo.Student;
@@ -137,6 +139,41 @@ public class Run {
 		Collections.sort(students);
 		System.out.println("정렬 후: " + students);
 		
+		System.out.println("======HashSet======");
+		Set<String> city = new HashSet<String>();
+		city.add("서울");
+		city.add("부산");
+		city.add("광명");
+		System.out.println(city);
+		//중복 데이터 추가 시도-> 안됑 ㅋ
+		city.add("서울");
+		System.out.println(city);
+		
+		//Hashset 요소조회
+		for(String str:city) {
+			System.out.println(str);
+		}
+		
+		
+		
+		
+		//삭제
+		city.remove("서울");
+		System.out.println("삭제후 : " + city);
+		city.clear();
+		System.out.println("비우기 :" + city);
+		
+		
+		Set<Student> set1 = new HashSet<Student>();
+		set1.add(new Student("김철수",30));
+		set1.add(new Student("이영희",40));
+		set1.add(new Student("홍길동",50));
+		set1.add(new Student("김철수",30));
+		
+		System.out.println(set1);
+		
+		set1.remove(new Student("김철수",30));
+		System.out.println("삭제 후"+ set1);
 		
 		
 		
