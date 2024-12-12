@@ -1,4 +1,4 @@
-package com.gn.study.practice02;
+package com.gn.practice02;
 
 public class Pair <T,U>{
 

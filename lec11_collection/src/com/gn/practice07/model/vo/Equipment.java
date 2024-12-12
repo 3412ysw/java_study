@@ -14,10 +14,12 @@ public class Equipment {
 		this.pricePerDay = pricePerDay;
 	}
 	
+	@Override
 	public int hashCode() {
 		return Objects.hash(name, pricePerDay);
 	}
 	
+	@Override
 	public boolean equals(Object obj) {
 		boolean result = false;
 		if(obj instanceof Equipment) {
@@ -29,7 +31,7 @@ public class Equipment {
 		return result;
 	}
 	
-	
+	@Override
 	public String toString() {
 		return "-"+ name + ": " + pricePerDay + "원";
 	}

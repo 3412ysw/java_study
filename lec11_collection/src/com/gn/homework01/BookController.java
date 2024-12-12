@@ -1,7 +1,10 @@
 package com.gn.homework01;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+import com.gn.practice08.model.vo.Person;
 
 public class BookController {
 	
@@ -25,20 +28,34 @@ public class BookController {
 	
 	public List <Book> searchBook(String keyword){
 		List<Book>searchList = new ArrayList<Book>();
-		while(true) {
-			
+		for(int i = 0; i < bookList.size() ; i++) {
+//			System.out.println(bookList.get(i).getTitle());
+			if(bookList.get(i).getTitle().contains(keyword)) {
+				searchList.add(bookList.get(i));
+			}
 		}
-//		return searchList;
+		return searchList;
 	}
 	
+	
 	public Book deleteBook(String title, String author) {
-		return null;
+		Book removeBook = null;
+		for(int i = 0; i < bookList.size() ; i++) {
+			if(bookList.get(i).getTitle().contains(title)
+				&&bookList.get(i).getAuthor().contains(author)) {
+				removeBook = bookList.get(i);
+				bookList.remove(i);
+			}
+		}
+		return removeBook;
 	}
 	
 	public int ascBook() {
-		return 0;
-		
+		Collections.sort(bookList);
+		return 1;
 	}
+
+	
 	
 	
 	

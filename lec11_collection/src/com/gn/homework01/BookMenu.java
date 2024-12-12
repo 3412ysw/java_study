@@ -76,13 +76,12 @@ public class BookMenu {
 	
 	public void selectList() {
 		System.out.println("=== 전체 조회 ===");
-		BookController b = new BookController();
 		 // booklist -> List<book>
-		List<Book> arr = bc.selectList();
-		if(arr.isEmpty()) {
+		List<Book> bookList = bc.selectList();
+		if(bookList.isEmpty()) {
 			System.out.println("존재하는 도서가 없습니다.");
 		}else {
-			for(Book a : arr) {
+			for(Book a : bookList) {
 				System.out.println(a);
 			}
 		}
@@ -90,14 +89,41 @@ public class BookMenu {
 	
 	public void searchBook() {
 		System.out.println("=== 도서 검색 ===");
+		System.out.print("검색어 : ");
+		sc.nextLine();
+		String keyword = sc.nextLine();
+		List<Book> searchList = bc.searchBook(keyword);
+		if(searchList.isEmpty()) {
+			System.out.println("검색 결과가 없습니다.");
+		}else {
+			for(Book a : searchList) {
+				System.out.println(a);
+			}
+		}
 	}
 	
 	public void deleteBook() {
 		System.out.println("=== 도서 삭제 ===");
+		System.out.print("도서명: ");
+		sc.nextLine();
+		String title = sc.nextLine();
+		System.out.print("저자명: ");
+		String author = sc.nextLine();
+		Book remove = bc.deleteBook(title, author);
+		if(remove==null) {
+			System.out.println("삭제할 도서를 찾지 못했습니다.");
+		}else {
+			System.out.println("성공적으로 삭제되었습니다.");
+		}
 	}
 	
 	public void ascBook() {
-		System.out.println("정렬에 성공하였습니다.");
+		if(bc.ascBook()==1) {
+			System.out.println("정렬에 성공하였습니다.");
+			
+		}else {
+			System.out.println("정렬에 실패하였습니다.");
+		}
 	}
 	
 

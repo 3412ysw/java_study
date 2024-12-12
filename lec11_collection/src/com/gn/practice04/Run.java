@@ -1,4 +1,4 @@
-package com.gn.prartice04;
+package com.gn.practice04;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.gn.prartice04;
+package com.gn.practice04;
 
 public class Product {
 
