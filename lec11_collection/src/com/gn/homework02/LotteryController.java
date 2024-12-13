@@ -9,11 +9,19 @@ public class LotteryController {
 	private Set<Lottery> win = new HashSet<Lottery>();
 	
 	public boolean insertObject(Lottery l) {
-		return false;
-		
+		if(lottery.contains(l)) {
+			return false;
+		}else {
+			lottery.add(l);
+			return true;
+		}
 	}
 	
 	public boolean deleteObject(Lottery l) {
+		
+		
+		
+		
 		return false;
 		
 	}

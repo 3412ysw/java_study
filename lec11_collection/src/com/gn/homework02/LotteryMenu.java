@@ -44,21 +44,39 @@ public class LotteryMenu {
 	public void insertObject() { 
 		System.out.print("추가할 추첨 대상 수 : ");
 		int num = sc.nextInt();
-		for(int i = 0 ; i < 3 ; i++) {
+		for(int i = 0 ; i < num ; i++) {
 			System.out.print("이름 : ");
+			String name = sc.next();
 			sc.nextLine();
-			String name = sc.nextLine();
 			System.out.print("휴대폰 번호(-빼고) : ");
-			int number = sc.nextInt();
-			
+			String phone = sc.next();
+			Lottery lottery = new Lottery(name,phone);
+			boolean bool = lc.insertObject(lottery);
+		    if(!bool) {
+		    	System.out.println("중복된 대상입니다. 다시 입력하세요.");
+		    	i--;
+		    }
+		}
+		System.out.println(num+"명추가 완료되었습니다.");
+	}
+	
+	public void deleteObject() {
+		System.out.println("삭제할 대상의 이름과 핸드폰 번호를 입력하세요.");
+		System.out.print("이름 : ");
+		String name = sc.next();
+		sc.nextLine();
+		System.out.println("핸드폰 번호('-'빼고) : ");
+		String phone = sc.next();
+		Lottery lottey = new Lottery(name, phone);
+		boolean bool = lc.deleteObject(lottey);
+		if(bool) {
+			System.out.println("삭제 완료되었습니다.");
+		}else {
+			System.out.println("존재하지 않는 대상입니다.");
 		}
 		
 		
-		
-		
 	}
-	
-	public void deleteObject() {}
 	
 	public void searchObject() {}
 	
