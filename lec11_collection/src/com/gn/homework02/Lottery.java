@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import com.gn.practice08.model.vo.Person;
 
-public class Lottery {
+public class Lottery implements Comparable<Lottery>{
 
 	private String name;
 	private String phone;
@@ -32,11 +32,13 @@ public class Lottery {
 		this.phone = phone;
 	}
 	
-//	@Override
-//	public String toStirng() {
-//		return name;
-//		}
 	
+	
+	@Override
+	public String toString() {
+		return "[이름 =" + name + ", 휴대폰 번호 =" + phone + "]";
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(name,phone);
@@ -55,9 +57,13 @@ public class Lottery {
 		return result;
 	}
 	
-//	public int compareTo(Lottery l) {
-//		return this.compareTo();
-//	}
+	@Override
+	public int compareTo(Lottery other) {
+		if(this.name.equals(other.name)) {
+			return this.phone.compareTo(other.phone);
+		}
+		return this.name.compareTo(other.name);
+	}
 	
 	
 	
