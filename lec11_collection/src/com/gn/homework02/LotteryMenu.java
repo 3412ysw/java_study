@@ -2,7 +2,7 @@ package com.gn.homework02;
 
 import java.util.*;
 
-import com.gn.practice08.model.vo.Person;
+
 
 public class LotteryMenu {
 
