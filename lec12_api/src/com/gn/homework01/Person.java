@@ -17,7 +17,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "[name=" + name + ", age=" + age + ", address=" + address + ", gender=" + gender + "]";
+		return "Person[name=" + name + ", age=" + age + ", address=" + address + ", gender=" + gender + "]";
 	}
 
 	public String getName() {
