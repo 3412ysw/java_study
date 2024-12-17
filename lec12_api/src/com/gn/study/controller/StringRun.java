@@ -41,6 +41,7 @@ public class StringRun {
 		System.out.println(test);
 		
 		//10. indexOf
+		System.out.println("INDEXOF");
 		test = "2024.12.16.12.43";
 		System.out.println(test.indexOf("."));
 		System.out.println(test.indexOf("12"));
