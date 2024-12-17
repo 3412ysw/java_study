@@ -43,9 +43,11 @@ public class BuilderMenu {
 		String answer1 = sc.next();
 		System.out.println(bc.firstCap(answer1));
 		System.out.print("문자 입력 : ");
-		String answer2 = sc.nextLine();
+		sc.nextLine();
+		String answer2 = sc.next();
 		char answer = answer2.charAt(0);
-		bc.findChar(answer1,answer);
+		System.out.println(bc.findChar(answer1,answer));
+		
 	}
 	
 	
