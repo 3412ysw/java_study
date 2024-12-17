@@ -113,6 +113,42 @@ public class StringRun {
 		String lowerCase = original.toLowerCase();
 		System.out.println("소문자 변환 : "+lowerCase);
 		
+		System.out.println("===valueOf====");
+		// valueOf
+		double pi = 3.14;
+		String piStr = String.valueOf(pi);
+		System.out.println(piStr + 2.1);
+		
+		
+		// StringBuilder
+		StringBuilder sb = new StringBuilder("Hello");
+		sb.append("World~!");
+		System.out.println(sb);
+		
+	    sb.insert(5, " java ");
+	    System.out.println(sb);
+		
+		sb.delete(11, 16+1);
+		System.out.println(sb);
+		
+		int idx = sb.indexOf("!");
+		sb.deleteCharAt(idx);
+		System.out.println(sb);
+		
+		sb.reverse();
+		System.out.println(sb);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
