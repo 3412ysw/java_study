@@ -24,7 +24,7 @@ public class BuilderController {
 	
 	public int findChar(String input, char one) {
 		int num= 0;
-		for(int i = 1;i==input.length(); i++) {
+		for(int i = 1;i <= input.length(); i++) {
 			if(input.charAt(i)== one) {
 				num= i;
 			}else {
