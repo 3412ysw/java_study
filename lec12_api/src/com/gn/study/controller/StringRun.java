@@ -26,7 +26,7 @@ public class StringRun {
 		//4. length()
 		System.out.println("length() : " +str2.length());
 		//5. charAt()
-		System.out.println("charAt(i) : " + str2.charAt(0));
+		System.out.println("in : " + str2.charAt(0));
 		//6. toCharArray()
 		char[] arr = str2.toCharArray();
 		System.out.println((int)'a'+"~"+(int)'z');

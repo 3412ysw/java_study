@@ -13,7 +13,7 @@ public class BuilderController {
 		return sb.toString();
 	}
 	
-	
+
 	public String firstCap(String input) {
 		String first = input.substring(0,1).toUpperCase();
 		String last = input.substring(1);
@@ -23,14 +23,11 @@ public class BuilderController {
 	}
 	
 	public int findChar(String input, char one) {
-		int num= 0;
-		for(int i = 1;i <= input.length(); i++) {
-			if(input.charAt(i)== one) {
-				num= i;
-			}else {
-				continue;
+		int num = 0;
+		for(int i =0;i<input.length();i++) {
+			if(input.charAt(i)==one) {
+		      num++;
 			}
-			
 		}
 		return num;
 		
