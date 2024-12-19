@@ -14,12 +14,15 @@ public class BufWriterRun {
 		}
 		File file = new File(dir,"sample2.txt");
 		
-		FileWriter fw = null;
-		BufferedWriter bw = null;
+//		FileWriter fw = null;
+//		BufferedWriter bw = null;
 		
-		try {
-			fw = new FileWriter(file,true);
-			bw = new BufferedWriter(fw);
+		try(BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
+//			try(FileWritwer fw = new FileWritwer(file)){
+//			fw = new FileWriter(file,true);
+//			bw = new BufferedWriter(fw);
+			
+			
 			
 			bw.write("안녕하세요");
 			bw.newLine();
@@ -28,31 +31,15 @@ public class BufWriterRun {
 			
 		}catch(IOException e) {
 			e.printStackTrace();
-		}finally {
-			try {
-				if(bw != null) bw.close();
-				if(fw != null) fw.close();
-			}catch(IOException e) {
-				e.printStackTrace();
-			}
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//		finally {
+//			try {
+//				if(bw != null) bw.close();
+//				if(fw != null) fw.close();
+//			}catch(IOException e) {
+//				e.printStackTrace();
+//			}
+//		}
 
 
 
