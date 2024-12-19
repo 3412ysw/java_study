@@ -1,4 +1,4 @@
-package com.gn.prcatice01;
+package com.gn.practice01;
 
 import java.io.File;
 
