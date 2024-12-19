@@ -1,4 +1,4 @@
-package com.gn.practise05;
+package com.gn.practice05;
 
 import java.io.File;
 import java.io.FileInputStream;

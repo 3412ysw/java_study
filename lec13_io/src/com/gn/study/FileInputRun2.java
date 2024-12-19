@@ -10,7 +10,7 @@ public class FileInputRun2 {
 		//  1. 디렉토리 지정
 		File dir = new File("C:\\test\\241219");
 		// 2. 파일 지정
-		File file = new File(dir, "simple2.dat");
+		File file = new File(dir, "sample2.dat");
 		// 3. 파일 입력 스트림 선언
 		FileInputStream fis = null;
 		try {

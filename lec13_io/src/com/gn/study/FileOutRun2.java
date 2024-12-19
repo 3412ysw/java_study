@@ -11,7 +11,7 @@ public class FileOutRun2 {
 		if(dir.exists() ==false) {
 			dir.mkdirs();
 		}
-		File file = new File(dir,"simple2.dat");
+		File file = new File(dir,"sample2.dat");
 		FileOutputStream fos = null;
 		try {
 			fos = new FileOutputStream(file,true);
