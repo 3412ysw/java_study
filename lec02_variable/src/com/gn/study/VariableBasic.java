@@ -57,7 +57,7 @@ public class VariableBasic {
 		//(2) 연산
 		int e = 50;
 		char f = '2';
-		System.out.println(e+f);
+		System.out.println(e+f+"dpd");
 		// 문자 형태로 작성된 숫자를 온전한 숫자값으로 도출하는 방법 
 		System.out.println(f-'0');
 		
